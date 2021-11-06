@@ -17,7 +17,7 @@ body {
     margin-top: -22%;
     margin-left: 12%;
     animation-delay: 4s;
-    animation: 0s animation_container 4.25s forwards;
+    animation: 0s animation_container 6.1s forwards;
 }
 
 .character_div {
@@ -34,7 +34,7 @@ body {
 }
 
 .shadow {
-    fill: aqua;
+    fill: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: auto;
 }
@@ -80,8 +80,7 @@ body {
 
 .cirle_animation {
     transform-origin: -150% 45%;
-    animation-delay: 2.5s;
-    animation: animation_move linear 4s forwards, 0.5s animation_resize linear 4s forwards;
+    animation: 4s animation_move linear 2s forwards, 0.5s animation_resize linear 6s forwards;
 }
 
 @keyframes animation_move {
