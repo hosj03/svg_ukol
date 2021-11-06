@@ -71,7 +71,7 @@ body {
 }
 
 .circle {
-    /*visibility: hidden;*/
+    visibility: hidden;
     fill: aqua;
     width: 10%;
     margin-top: -12%;
@@ -106,11 +106,13 @@ body {
     100% {
         fill: aqua;
         transform: translateX(550%);
-        /*animation: animation_resize linear 0.5s forwards;*/
     }
 }
 
 @keyframes animation_resize {
+    0% {
+        visibility: visible;
+    }
     15% {
         fill: rgba(0, 255, 255, 0.85);
     }
