@@ -14,7 +14,8 @@ body {
 
 .movable_container {
     width: 95%;
-    margin-top:-25%;
+    margin-top: -22%;
+    margin-left: 12%;
 }
 
 .character_div {
@@ -62,3 +63,52 @@ body {
     }
 }
 
+.cicle_div {
+    display: flex;
+}
+
+.circle {
+    /*visibility: hidden;*/
+    fill: aqua;
+    width: 10%;
+    margin-top: -13%;
+    margin-left: 4%;
+}
+
+.cirle_animation {
+    animation: animation_move linear 4s forwards, 1s animation_resize linear 4s forwards;
+    /*animation-delay: 2.5s;*/
+}
+
+@keyframes animation_move {
+    0% {
+        visibility: visible;
+    }
+    15% {
+        fill: white;
+    }
+    35% {
+        fill: aqua;
+    }
+    50% {
+        fill: white;
+    }
+    70% {
+        fill: aqua;
+    }
+    85% {
+        fill: white;
+    }
+    100% {
+        fill: aqua;
+        transform: translate(550%, 0px);
+        /*animation: animation_resize linear 0.5s forwards;*/
+    }
+}
+
+@keyframes animation_resize {
+    100% {
+        transform: scale(4, 4);
+        visibility: hidden;
+    }
+}
