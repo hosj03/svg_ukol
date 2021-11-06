@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+.background_div {
+    margin-top: 5%;
+    display: flex;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+}
+
+.movable_container {
+    width: 95%;
+    margin-top:-25%;
+}
+
+.character_div {
+    display: flex;
+}
+
+.character {
+    width: 10%;
+    height: auto;
+}
+
+.shadow_div {
+    display: flex;
+}
+
+.shadow {
+    fill: aqua;
+    width: 10%;
+    height: auto;
+}
+
+.floating {
+    animation: float linear 1s infinite;
+}
+
+@keyframes float {
+    from { transform: rotate(0deg) translateX(1px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(1px) rotate(-360deg); }
+}
+
+.resizing {
+    animation-delay: 0.35s;
+    animation: resize linear 1s infinite;
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
